@@ -18,9 +18,3 @@ A modern e-commerce website for GoodStart Holdings featuring M-Pesa integration.
 - Font Awesome Icons
 - Local Storage API
 - M-Pesa Daraja API (Simulation Mode)
-
-## Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/goodstart-holdings-shop.git
