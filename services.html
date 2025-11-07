@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - GoodStart Holdings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>GoodStart Holdings</h2>
+                <p>Bringing Kenyan homes together</p>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="products-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Beyond products - comprehensive solutions for your home and business</p>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-intro">
+                <h2>Comprehensive Solutions for Every Need</h2>
+                <p>At GoodStart Holdings, we go beyond just selling products. We offer a range of services designed to make your shopping experience convenient, reliable, and tailored to your specific needs.</p>
+            </div>
+
+            <!-- Main Services -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Home Delivery Service</h3>
+                    <p>Get your groceries delivered straight to your doorstep. Fast, reliable, and convenient.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Free delivery on orders over KSh 2,000</li>
+                        <li><i class="fas fa-check"></i> Same-day delivery in Nairobi</li>
+                        <li><i class="fas fa-check"></i> Next-day delivery in other towns</li>
+                        <li><i class="fas fa-check"></i> Contactless delivery option</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('delivery')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Bulk Purchasing</h3>
+                    <p>Special rates and services for businesses, institutions, and large families.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Competitive wholesale pricing</li>
+                        <li><i class="fas fa-check"></i> Customized delivery schedules</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Flexible payment terms</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('bulk')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Subscription Service</h3>
+                    <p>Never run out of essentials with our automated monthly subscription.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Automated monthly deliveries</li>
+                        <li><i class="fas fa-check"></i> 10% discount on subscription items</li>
+                        <li><i class="fas fa-check"></i> Easy pause or cancel anytime</li>
+                        <li><i class="fas fa-check"></i> Customizable delivery dates</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('subscription')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Gift Hampers</h3>
+                    <p>Beautifully curated gift hampers for all occasions with free delivery.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Customizable hampers</li>
+                        <li><i class="fas fa-check"></i> Same-day delivery available</li>
+                        <li><i class="fas fa-check"></i> Corporate gifting solutions</li>
+                        <li><i class="fas fa-check"></i> Free gift wrapping</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('gift')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Product Returns & Exchange</h3>
+                    <p>Hassle-free returns and exchanges within 7 days of purchase.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 7-day return policy</li>
+                        <li><i class="fas fa-check"></i> No questions asked returns</li>
+                        <li><i class="fas fa-check"></i> Free pickup for returns</li>
+                        <li><i class="fas fa-check"></i> Instant refund or exchange</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('returns')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>24/7 customer support to assist with all your queries and concerns.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Phone, email, and chat support</li>
+                        <li><i class="fas fa-check"></i> Product recommendations</li>
+                        <li><i class="fas fa-check"></i> Order tracking assistance</li>
+                        <li><i class="fas fa-check"></i> Complaint resolution</li>
+                    </ul>
+                    <div class="service-cta">
+                        <button class="btn btn-primary" onclick="showServiceModal('support')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="service-areas">
+                <h2>Areas We Serve</h2>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h3>Nairobi Region</h3>
+                        <ul>
+                            <li>Nairobi CBD</li>
+                            <li>Westlands</li>
+                            <li>Karen</li>
+                            <li>Langata</li>
+                            <li>Embakasi</li>
+                            <li>Kasarani</li>
+                        </ul>
+                    </div>
+                    <div class="area-card">
+                        <h3>Central Kenya</h3>
+                        <ul>
+                            <li>Thika</li>
+                            <li>Kiambu</li>
+                            <li>Limuru</li>
+                            <li>Murang'a</li>
+                            <li>Nyeri</li>
+                        </ul>
+                    </div>
+                    <div class="area-card">
+                        <h3>Rift Valley</h3>
+                        <ul>
+                            <li>Nakuru</li>
+                            <li>Naivasha</li>
+                            <li>Eldoret</li>
+                            <li>Kitale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Table -->
+            <div class="pricing-section">
+                <h2>Delivery Pricing</h2>
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <h3>Standard Delivery</h3>
+                        <div class="price">KSh 200</div>
+                        <ul>
+                            <li>1-2 business days</li>
+                            <li>Order tracking</li>
+                            <li>SMS notifications</li>
+                            <li>Free over KSh 2,000</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Express Delivery</h3>
+                        <div class="price">KSh 400</div>
+                        <ul>
+                            <li>Same-day delivery</li>
+                            <li>Real-time tracking</li>
+                            <li>Priority handling</li>
+                            <li>Free over KSh 3,000</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Bulk Delivery</h3>
+                        <div class="price">Custom</div>
+                        <ul>
+                            <li>Custom scheduling</li>
+                            <li>Dedicated vehicle</li>
+                            <li>Loading assistance</li>
+                            <li>Volume discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GoodStart Holdings</h3>
+                    <p>Bringing Kenyan homes together - one product at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 700 000 000</p>
+                    <p><i class="fas fa-envelope"></i> info@goodstart.co.ke</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoodStart Holdings Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Service modal functionality
+        const modal = document.getElementById('serviceModal');
+        const closeModal = document.querySelector('.close-modal');
+
+        const serviceDetails = {
+            delivery: {
+                title: "Home Delivery Service",
+                content: `
+                    <h2>Home Delivery Service</h2>
+                    <p>Enjoy the convenience of having your groceries delivered to your doorstep. Our reliable delivery service ensures you get your products fresh and on time.</p>
+                    
+                    <h3>Delivery Options:</h3>
+                    <ul>
+                        <li><strong>Standard Delivery:</strong> 1-2 business days - KSh 200 (Free for orders over KSh 2,000)</li>
+                        <li><strong>Express Delivery:</strong> Same-day delivery - KSh 400 (Free for orders over KSh 3,000)</li>
+                        <li><strong>Scheduled Delivery:</strong> Choose your preferred delivery date and time</li>
+                    </ul>
+                    
+                    <h3>How to Order:</h3>
+                    <ol>
+                        <li>Add products to your cart</li>
+                        <li>Proceed to checkout</li>
+                        <li>Select your delivery option</li>
+                        <li>Choose delivery date and time</li>
+                        <li>Complete your order</li>
+                    </ol>
+                    
+                    <div class="modal-cta">
+                        <a href="products.html" class="btn btn-primary">Start Shopping</a>
+                    </div>
+                `
+            },
+            bulk: {
+                title: "Bulk Purchasing Service",
+                content: `
+                    <h2>Bulk Purchasing for Businesses & Institutions</h2>
+                    <p>Specialized service for restaurants, hotels, schools, offices, and large families requiring regular bulk purchases.</p>
+                    
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li>Wholesale pricing with volume discounts</li>
+                        <li>Dedicated account manager</li>
+                        <li>Customized delivery schedules</li>
+                        <li>Monthly billing and credit terms</li>
+                        <li>Priority product allocation</li>
+                    </ul>
+                    
+                    <h3>Eligibility:</h3>
+                    <ul>
+                        <li>Minimum order value: KSh 10,000 per delivery</li>
+                        <li>Regular monthly orders preferred</li>
+                        <li>Registered business/institution</li>
+                    </ul>
+                    
+                    <div class="modal-cta">
+                        <a href="contact.html" class="btn btn-primary">Contact for Bulk Orders</a>
+                    </div>
+                `
+            },
+            subscription: {
+                title: "Monthly Subscription Service",
+                content: `
+                    <h2>Never Run Out of Essentials</h2>
+                    <p>Automate your shopping with our subscription service. Get your regular items delivered automatically every month.</p>
+                    
+                    <h3>Subscription Benefits:</h3>
+                    <ul>
+                        <li>10% discount on all subscription items</li>
+                        <li>Free delivery regardless of order value</li>
+                        <li>Easy online management portal</li>
+                        <li>Flexible - pause, skip, or cancel anytime</li>
+                        <li>Early access to new products</li>
+                    </ul>
+                    
+                    <h3>Popular Subscription Items:</h3>
+                    <ul>
+                        <li>Maize flour and cooking oil</li>
+                        <li>Sugar and rice</li>
+                        <li>Soap and detergents</li>
+                        <li>Milk and beverages</li>
+                        <li>Custom items of your choice</li>
+                    </ul>
+                    
+                    <div class="modal-cta">
+                        <a href="products.html" class="btn btn-primary">Set Up Subscription</a>
+                    </div>
+                `
+            },
+            gift: {
+                title: "Gift Hampers Service",
+                content: `
+                    <h2>Beautiful Gift Hampers for Every Occasion</h2>
+                    <p>Surprise your loved ones with thoughtfully curated gift hampers filled with quality household essentials.</p>
+                    
+                    <h3>Occasions:</h3>
+                    <ul>
+                        <li>Birthdays and Anniversaries</li>
+                        <li>Housewarming gifts</li>
+                        <li>Corporate gifting</li>
+                        <li>Holiday seasons</li>
+                        <li>Get well soon wishes</li>
+                    </ul>
+                    
+                    <h3>Hamper Options:</h3>
+                    <ul>
+                        <li><strong>Basic Hamper:</strong> KSh 1,500 - Essential items</li>
+                        <li><strong>Family Hamper:</strong> KSh 3,000 - Complete family package</li>
+                        <li><strong>Premium Hamper:</strong> KSh 5,000 - Luxury items included</li>
+                        <li><strong>Custom Hamper:</strong> Your choice of items and budget</li>
+                    </ul>
+                    
+                    <div class="modal-cta">
+                        <a href="contact.html" class="btn btn-primary">Order Gift Hamper</a>
+                    </div>
+                `
+            },
+            returns: {
+                title: "Returns & Exchange Policy",
+                content: `
+                    <h2>Hassle-Free Returns & Exchanges</h2>
+                    <p>Your satisfaction is guaranteed. We make returns and exchanges simple and convenient.</p>
+                    
+                    <h3>Return Policy:</h3>
+                    <ul>
+                        <li><strong>7-Day Return Window:</strong> Return any unused item within 7 days</li>
+                        <li><strong>Free Pickup:</strong> We pick up returns from your location</li>
+                        <li><strong>Instant Refund:</strong> Refund processed within 24 hours</li>
+                        <li><strong>No Questions Asked:</strong> Simple and straightforward process</li>
+                    </ul>
+                    
+                    <h3>Conditions:</h3>
+                    <ul>
+                        <li>Products must be in original packaging</li>
+                        <li>Items must be unused and in resalable condition</li>
+                        <li>Perishable items cannot be returned unless defective</li>
+                        <li>Original receipt or order confirmation required</li>
+                    </ul>
+                `
+            },
+            support: {
+                title: "Customer Support",
+                content: `
+                    <h2>24/7 Customer Support</h2>
+                    <p>We're here to help whenever you need assistance with your orders, products, or any queries.</p>
+                    
+                    <h3>Support Channels:</h3>
+                    <ul>
+                        <li><strong>Phone:</strong> +254 700 000 000 (24/7)</li>
+                        <li><strong>Email:</strong> support@goodstart.co.ke</li>
+                        <li><strong>Live Chat:</strong> Available on website</li>
+                        <li><strong>WhatsApp:</strong> +254 711 000 000</li>
+                        <li><strong>Store Visits:</strong> All our physical locations</li>
+                    </ul>
+                    
+                    <h3>Support Hours:</h3>
+                    <ul>
+                        <li><strong>Phone & Chat:</strong> 24/7</li>
+                        <li><strong>Email:</strong> Response within 2 hours</li>
+                        <li><strong>Store:</strong> 8:00 AM - 8:00 PM daily</li>
+                    </ul>
+                    
+                    <div class="modal-cta">
+                        <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                    </div>
+                `
+            }
+        };
+
+        function showServiceModal(service) {
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = serviceDetails[service].content;
+            modal.style.display = 'block';
+        }
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
